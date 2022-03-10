@@ -6,7 +6,6 @@ class AccountPage_user(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        
         self.sumbit_btn.clicked.connect(self.log)
 
     def log(self):
@@ -17,7 +16,7 @@ class AccountPage_user(QMainWindow, Ui_MainWindow):
         cmdp = self.confrimeline.text()
 
         if firstname == "" or lastname == "" or user_email == "":
-            label = self.correction.setText("<font color=red>Mauvaise Information</font>")
+            label = self.correction.setText("<font color=red>Vos mots de passe ne correspondent pas</font>")
 
         elif cmdp != mdp:
             label = self.correction.setText("<font color=red>Mauvaise mdp</font>")

@@ -223,7 +223,8 @@ border-radius:none;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:none;</string>
+border-radius:none;
+</string>
       </property>
      </widget>
      <widget class="QPushButton" name="sumbit_btn">
